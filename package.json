@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "electron": "^37.2.2"
+  },
+  "name": "argon",
+  "version": "1.0.0",
+  "description": "a spotify miniplayer built on py",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "winterrex",
+  "license": "ISC"
+}

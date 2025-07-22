@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+*
+{
+    font-family: "JetBrains Mono", monospace;
+    app-region: drag; 
+    outline: 0px;
+    background: #2e3440;
+}
+
+body 
+{
+    color: #88c0d0;
+    overflow: hidden;
+    text-align: center;
+}
+
+/*PAUSE BUTTON HIDDEN*/
+.hidden 
+{
+    display: none;
+}
+
+button, pre, input
+{
+    app-region: no-drag;
+}
+
+button
+{
+    height: auto;
+    width: auto;
+    font-size: 1.5em;
+    border: none;
+    color: #88c0d0;
+}
+
+button:hover
+{
+    cursor: pointer;
+}
+
+p
+{
+    font-size: 15px;
+    color: #88c0d0;
+}
+
+#scrubber-container
+{
+    font-size: 13px;
+}
+
+progress {
+    width: 50%;
+    height: 6px;
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #4c566a;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+progress::-webkit-progress-bar {
+    background-color: #4c566a;
+    border-radius: 3px;
+}
+
+progress::-webkit-progress-value {
+    background-color: #88c0d0;
+    border-radius: 3px 0 0 3px; 
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Argon</title>
+  <link rel="stylesheet" href="css/catpuccin.css">
+  <style id="user-css"></style>
+</head>
+<body>
+  <button id="vol_down">-</button>
+  <button onclick="window.api.send('prev')"><</button>
+  <button id="playBtn">&#9654;</button>
+  <button id="pauseBtn" class="hidden">⏸</button>
+  <button onclick="window.api.send('next')">></button>
+  <button id="vol_up">+</button>
+  <div id="scrubber-container">
+    <span id="currentTime">0:00</span><progress type="range" id="scrubber" min="0" max="100" value="0" /></progress><span id="durationTime">0:00</span>
+  </div>
+  <input type="file" id="cssUpload" accept=".css" style="display:none">
+
+  <p id="output"></p>
+    
+
+  <script src="js/page.js"></script>
+  <script src="js/scrubber.js"></script>
+</body>
+</html>
